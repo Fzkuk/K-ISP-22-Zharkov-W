@@ -11,18 +11,18 @@
 Установка файла репозитория **Docker CE** для **CentOS**
 ![image](https://github.com/user-attachments/assets/f19baa9f-da6b-438f-9c46-fec2d776b975)
 
-**-P /etc/yum.repos.d/** **-** Указывает директорию, в которую будет сохранён загруженный файл.
+**-P /etc/yum.repos.d/** — Указывает директорию, в которую будет сохранён загруженный файл.
 
-**https://download.docker.com/linux/centos/docker-ce.repo** **-** URL файла репозитория **Docker CE** для **CentOS**
+**https://download.docker.com/linux/centos/docker-ce.repo** — URL файла репозитория **Docker CE** для **CentOS**
 
 Как итог команда была успешно выполнена, и файл **Docker CE** был загружен и сохранён в указанную нами директорию. Он необходим нам для настройки репозитория Docker, что позволит ПМ* **yum** устанавливать пакеты **Docker CE** на нашу систему.
 
 Установка и настройку необходимых пакетов для работы с Docker.
 ![image](https://github.com/user-attachments/assets/b332da88-bcbd-42eb-9e3c-8a56bd1cace0)
 
-**docker-ce** **-** Основной пакет **Docker Community Edition**.
-**docker-ce-cli** ** -** Командная строка Docker для управления **Docker**.
-**containerd.io** ** -** Контейнерный рантайм, используемый **Docker**.
+**docker-ce** — Основной пакет **Docker Community Edition**.
+**docker-ce-cli** — Командная строка Docker для управления **Docker**.
+**containerd.io** — Контейнерный рантайм, используемый **Docker**.
 
 Команда была успешно выполнена, и все необходимое для работы с **Docker CE** были установлены на систему. Это позволяет использовать **Docker** для создания и управления контейнерами на системе.
 
