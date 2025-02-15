@@ -76,6 +76,19 @@
 ![image](https://github.com/user-attachments/assets/ffd08698-c7f3-4bca-b7f7-fefa85a5aed2)
 
 
+Эта команда просто копирует все файлы из папки **config** в другую папку **/mnt/common_volume/swarm/grafana/config/.**
+
+![image](https://github.com/user-attachments/assets/c0c3dbe8-6265-443e-8211-6e5aa951c80e)
+
+ Эта команда переименовывает файл **grafana.yaml** в **docker-compose.yaml**. Это может быть полезно, если вы хотите использовать конфигурацию **Grafana** в качестве конфигурации для **Docker Compose**.
+
+![image](https://github.com/user-attachments/assets/530300dd-b39f-4ddd-b239-11412ea7c73c)
+
+Этой командой мы запускаем все контейнеры, определенные в нашем файле **docker-compose.yaml**, в фоновом режиме с правами суперпользователя. Это удобно для запуска сложных приложений, состоящих из нескольких контейнеров, таких как стек **Grafana**.
+
+![image](https://github.com/user-attachments/assets/1cd765ac-e05c-4d41-8778-4056e01ec89d)
+
+
 
 
 
