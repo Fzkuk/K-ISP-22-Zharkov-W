@@ -1,5 +1,5 @@
 # K-ISP-22-Zharkov-W LAB_1
-                                                      Начало работы(08.02.2025)
+                                                  Начало работы(08.02.2025)
 
 Были установлены пакеты **wget** и **curl** с помощью пакетного менеджера **yum**
 ![image](https://github.com/user-attachments/assets/ec2024c0-5505-472b-abf9-e0c922b3eb31)
