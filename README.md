@@ -37,3 +37,46 @@
 **Сноска:**
 
 ПМ*- Пакетный менеджер
+
+                                              Продолжение работы(15.02.2025)
+
+Объявление переменной **COMVER**, полученной в результате curl запроса, хранящей в себе номер последней версии Docker Compose и скачиваем скрипт **docker-compose** последней версии, используя объявленную ранее переменную и помещаем его в каталог **/usr/bin**
+
+![image](https://github.com/user-attachments/assets/3cab9e18-36c6-4c2f-ace4-b7c5fe7a49d3)
+
+Предоставление прав на выполнение файла **docker-compose.**
+
+![image](https://github.com/user-attachments/assets/812ea156-307a-457a-a0b3-f4fc9a21d096)
+
+Проверка установленной версии **Docker Compose**.
+
+![image](https://github.com/user-attachments/assets/4e7b62bf-42f4-4b67-984e-b10fbd60a2b7)
+
+После ввода команды **git clone https://github.com/skl256/grafana_stack_for_docker.git** на нашем компьютере создается папка с этим проектом, и в ней будут все файлы, которые есть в этом проекте на GitHub. Это позволит нам работать с этими файлами локально, например, изменять их или просто просматривать.
+
+![image](https://github.com/user-attachments/assets/454eeb87-abac-46ac-a0f2-c50e7d8e7ce6)
+
+Данной командой мы перешли в папку, которуй созадли ранее 
+
+![image](https://github.com/user-attachments/assets/a783f4a0-0a65-473d-b530-bde9c7ab199b)
+
+
+Эта команда создает указанную директорию и все необходимые родительские директории.
+
+![image](https://github.com/user-attachments/assets/480c7693-43e8-43c7-9685-35cbdfec8a27)
+
+
+
+Создаем три директории: **grafana-config, grafana-data, и prometheus-data внутри /mnt/common_volume/grafana/**.
+
+![image](https://github.com/user-attachments/assets/d5be76ba-7c80-4a9b-9ae2-b9d87889867a)
+
+Рекурсивно изменяем владельца и группу для указанных директорий и всех их содержимых файлов и поддиректорий на текущего пользователя и его группу.
+
+![image](https://github.com/user-attachments/assets/ffd08698-c7f3-4bca-b7f7-fefa85a5aed2)
+
+
+
+
+
+
