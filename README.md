@@ -1,8 +1,16 @@
 # K-ISP-22-Zharkov-W LAB_1
                                                   Начало работы(08.02.2025)
 
+
+Перед началой установки, нужно установить Linux Oracle на VirtualBox, для этого нужно:
+
+Выделить 2+ ядер. Выделать 4096+ МБ озу. При установки операционной системы, нужно будет выбрать английский язык(eng).
+
+
 Были установлены пакеты **wget** и **curl** с помощью пакетного менеджера **yum**
 ![image](https://github.com/user-attachments/assets/ec2024c0-5505-472b-abf9-e0c922b3eb31)
+
+    sudo yum install wget
 
 **wget** — это утилита командной строки для загрузки файлов с веб-серверов.
 
@@ -10,6 +18,8 @@
 
 Установка файла репозитория **Docker CE** для **CentOS**
 ![image](https://github.com/user-attachments/assets/f19baa9f-da6b-438f-9c46-fec2d776b975)
+
+    sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo
 
 **-P /etc/yum.repos.d/** — Указывает директорию, в которую будет сохранён загруженный файл.
 
@@ -20,6 +30,8 @@
 Установка и настройку необходимых пакетов для работы с Docker.
 ![image](https://github.com/user-attachments/assets/b332da88-bcbd-42eb-9e3c-8a56bd1cace0)
 
+    sudo yum install docker-ce docker-ce-cli containerd.io
+
 **docker-ce** — Основной пакет **Docker Community Edition**.
 **docker-ce-cli** — Командная строка Docker для управления **Docker**.
 **containerd.io** — Контейнерный рантайм, используемый **Docker**.
@@ -29,6 +41,9 @@
  Этот шаг необходим для того, чтобы Docker мог начать работать после установки.
  ![image](https://github.com/user-attachments/assets/9f25b7d6-d8f0-4279-9495-7fd0c1897e20)
 
+    sudo systemctl enable docker --now
+
+    
 Была создана символическая ссылка **/etc/systemd/system/multi-user.target.wants/docker.service**, которая указывает на **/usr/lib/systemd/system/docker.service**.
 
 Теперь **Docker** готов к использованию и будет автоматически запускаться при каждом старте системы.
@@ -43,6 +58,8 @@
 Объявление переменной **COMVER**, полученной в результате curl запроса, хранящей в себе номер последней версии Docker Compose и скачиваем скрипт **docker-compose** последней версии, используя объявленную ранее переменную и помещаем его в каталог **/usr/bin**
 
 ![image](https://github.com/user-attachments/assets/3cab9e18-36c6-4c2f-ace4-b7c5fe7a49d3)
+
+    COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
 
 Предоставление прав на выполнение файла **docker-compose.**
 
