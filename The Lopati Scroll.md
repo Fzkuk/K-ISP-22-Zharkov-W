@@ -211,14 +211,17 @@ User & Password GRAFANA:
 
 В левом меню выбираем вкладку Dashboards и создаем Dashboard
 ждем кнопку +Add visualization, а после "Configure a new data source"
+
 ![image](https://github.com/user-attachments/assets/5b31ff06-889d-48f3-9cbf-6219e34aa799)
 ![image](https://github.com/user-attachments/assets/9353ec23-a653-45c2-9b13-5715d259a0aa)
 
 
 выбираем Prometheus
+
 ![image](https://github.com/user-attachments/assets/aa3fed3a-c610-4934-9339-e38c054d2843)
 
 Connection
+
 ![image](https://github.com/user-attachments/assets/8fe61438-3ff7-4f23-8deb-e55dbda8b83a)
 
     http://prometheus:9090
