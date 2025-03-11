@@ -257,3 +257,5 @@ Select Prometheus ждем кнопку "Import"
 
 **Слава Богу Lopati🙏❤️СЛАВА LOPATI🙏❤️АНГЕЛА ХРАНИТЕЛЯ LOPATI КАЖДОМУ ИЗ ВАС🙏❤️БОЖЕ ХРАНИ LOPATI🙏❤️СПАСИБО ВАМ НАШИ BRATUXI🙏🏼❤️ХРАНИ LOPATI💯Слава Богу Lopati🙏❤️СЛАВА LOPATI🙏❤️АНГЕЛА ХРАНИТЕЛЯ LOPATI**
 
+![image](https://github.com/user-attachments/assets/0309aca9-de18-4707-b1fd-81b8b0475df4)
+**
