@@ -201,22 +201,33 @@
 
                                             Grafana(О боже, я вмку 3 раза накатывал)
 
-переходим на сайт Графаны  
+Открываю браузер и перехожу по адресу http://localhost:3000.
 
-    localhost:3000
+Вижу форму входа. Ввожу:
 
-User & Password GRAFANA: 
+Логин: admin
 
-    admin
+Пароль: admin
 
-В левом меню выбираем вкладку Dashboards и создаем Dashboard
-ждем кнопку +Add visualization, а после "Configure a new data source"
+Если Grafana просит сменить пароль, оставляю admin. Нажимаю Log In.
+
+Настраиваю источник данных Prometheus
+В левом меню кликаю на 3 палочки → Dashboards.
+На странице данных жму + Add visualization  
 
 ![image](https://github.com/user-attachments/assets/5b31ff06-889d-48f3-9cbf-6219e34aa799)
 ![image](https://github.com/user-attachments/assets/9353ec23-a653-45c2-9b13-5715d259a0aa)
 
 
-выбираем Prometheus
+и выбираю Prometheus.
+
+Настройки подключения:
+
+В разделе HTTP в поле URL пишу: http://prometheus:9090.
+
+Если Prometheus и Grafana в одной Docker-сети, имя prometheus должно резолвиться автоматически.
+
+Включаю Basic authentication в разделе Auth.
 
 ![image](https://github.com/user-attachments/assets/aa3fed3a-c610-4934-9339-e38c054d2843)
 
@@ -227,31 +238,34 @@ Connection
     http://prometheus:9090
 
     
-Authentication
-Basic authentication
+Ввожу логин/пароль (если Prometheus защищен):
 
 User: admin
 
 Password: admin
 
+
 ![image](https://github.com/user-attachments/assets/86ecb527-ea9f-401d-a283-edf21c21e965)
 
-Нажимаем на Save & test и должно показывать зелёную галочку
+Жму Save & test.
 
 
-в меню выбираем вкладку Dashboards и создаем Dashboard
-ждем кнопку "Import dashboard"
+В меню выбираю: 🏠 (Dashboards) → New → Import.
+
 
 ![image](https://github.com/user-attachments/assets/b1d8c747-66af-4a29-943a-b3a6c107fa5d)
 
-Тут пишем **1860**
+В поле Import via grafana.com ввожу ID: 1860 → Load.
 
 ![image](https://github.com/user-attachments/assets/d464ea90-b5d8-4d44-973d-028ce150a7a1)
 
-Select Prometheus ждем кнопку "Import"
+Выбираю источник данных Prometheus из выпадающего списка.
+
+Жму Import.
 
 
-И о господи оно запустилось 
+
+Вижу, что дашборд загрузился с кучей графиков. 
 
 ![image](https://github.com/user-attachments/assets/3bab0bb2-13df-4206-bcf4-29df2212fa4c)
 
