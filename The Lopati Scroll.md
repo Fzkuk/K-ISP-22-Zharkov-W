@@ -87,7 +87,11 @@
 
 ![image](https://github.com/user-attachments/assets/454eeb87-abac-46ac-a0f2-c50e7d8e7ce6)
 
-    git clone https://github.com/skl256/grafana_stack_for_docker.git
+    sudo yum install git
+    
+  *
+    
+        git clone https://github.com/skl256/grafana_stack_for_docker.git
 
 Данной командой мы перешли в папку, которуй созадли ранее 
 
@@ -114,6 +118,11 @@
 
     sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}
 
+
+**touch:** создает новый пустой файл (или обновляет метку времени существующего файла).
+**/mnt/common_volume/grafana/grafana-config/grafana.ini**: путь к новому файлу.
+
+    touch /mnt/common_volume/grafana/grafana-config/grafana.ini
 
 Эта команда просто копирует все файлы из папки **config** в другую папку **/mnt/common_volume/swarm/grafana/config/.**
 
@@ -173,6 +182,11 @@
 Так-же удаляет созданную сеть (docker network ls**).
 
 Не может удалять тома по умолчанию (но можно добавить --volumes для полного удаления данных).
+
+
+Командой выполняем клонирование удаленного Git-репозитория с GitHub в папку 
+
+    git clone https://github.com/Fzkuk/K-ISP-22-Zharkov-W.git
 
 **Сноска**
 
