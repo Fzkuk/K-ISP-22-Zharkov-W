@@ -286,4 +286,6 @@ Password: admin
 йоу)
 
 ![image](https://github.com/user-attachments/assets/0309aca9-de18-4707-b1fd-81b8b0475df4)
-**
+
+![image](https://github.com/user-attachments/assets/0dbecbfe-d8b0-4d87-937e-da4e3a38e7f3)
+
