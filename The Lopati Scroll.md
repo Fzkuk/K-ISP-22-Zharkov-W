@@ -289,3 +289,69 @@ Password: admin
 
 ![image](https://github.com/user-attachments/assets/0dbecbfe-d8b0-4d87-937e-da4e3a38e7f3)
 
+
+
+
+                                                  VI KA(15.03.2025)
+
+
+Вводим команду 
+
+    echo -e "# TYPE light_metric1 gauge\nlight_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
+
+![image](https://github.com/user-attachments/assets/d7c48e84-cd28-4f95-b22c-ad7d065355e3)
+
+
+**# TYPE light_metric1 gauge** — объявляет тип метрики light_metric1 как gauge (изменяемое числовое значение).
+
+**light_metric1 0** — устанавливает начальное значение метрики в 0.
+
+Команда создает метрику light_metric1 типа gauge со значением 0 и отправляет её в VictoriaMetrics через API для сбора и хранения метрик.
+
+
+Переходим в браузере по ссылке http://localhost:8428/, открывается такое меню в нём нужно выбрать vmui
+
+![image](https://github.com/user-attachments/assets/660a1c44-ba6b-42a3-a94b-325eb30e51db)
+
+Вписываем light_metric1 и нажимаем Execute Query
+
+![image](https://github.com/user-attachments/assets/8c96e727-2359-444f-82da-71f82e671a12)
+
+
+Переходим на http://localhost:3000 выбираем Dashboard и нажимаем New Dashboard, далее Add Visualization
+
+![image](https://github.com/user-attachments/assets/88a8e50a-aa3f-47d7-a8de-0480cf1ea782)
+
+
+Нажимаем Configure a new data source и выбираем Prometheus
+
+![image](https://github.com/user-attachments/assets/71d5bf46-b0f7-4bcd-bf4c-cda328c28898)
+
+
+
+Вписываем:
+
+Name: vika
+
+Connection: http://victoriametrics:8428
+
+Нажимаем Save & Test
+
+
+![image](https://github.com/user-attachments/assets/40e319bf-3ca3-44d9-981d-3a0a1391f355)
+
+
+Вписываем light_metric1
+
+![image](https://github.com/user-attachments/assets/3a7f68a2-6aee-4380-8eea-0ec0863ca1dd)
+
+Выходит панель с графиком, где есть активность light_metric1
+
+![image](https://github.com/user-attachments/assets/44688eee-b76d-4699-8b9d-b05fcedc2ca3)
+
+
+![image](https://github.com/user-attachments/assets/60ebfe55-c980-4a92-b2db-6bfacceaff14)
+
+
+
+
