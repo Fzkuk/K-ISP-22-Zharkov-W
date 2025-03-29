@@ -350,7 +350,8 @@ Connection: http://victoriametrics:8428
 ![image](https://github.com/user-attachments/assets/44688eee-b76d-4699-8b9d-b05fcedc2ca3)
 
 
-![image](https://github.com/user-attachments/assets/60ebfe55-c980-4a92-b2db-6bfacceaff14)
+![image](https://github.com/user-attachments/assets/0de6d209-df1b-4e4e-a2fd-05f8e184d768)
+
 
 
 
