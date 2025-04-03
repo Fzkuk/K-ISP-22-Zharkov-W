@@ -1,4 +1,15 @@
 # K-ISP-22-Zharkov-W LAB_1
+
+![image](https://github.com/user-attachments/assets/f2e31d4d-84c9-4f5a-9c5a-937505ba7da8)
+
+Архитектура системы мониторинга с использованием Prometheus, Grafana, Alertmanager и Victoria Metrics
+
+
+
+
+
+
+
                                                     Введение(08.02.2025)
 
 
